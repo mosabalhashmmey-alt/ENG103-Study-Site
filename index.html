@@ -39,7 +39,13 @@
                     </div>
                 </header>
 
-                <h1 class="page-title">Chapter 1: Introduction to Technical Communication</h1>
+                <div class="glass-card mb-4" style="display: flex; justify-content: space-between; align-items: center; border-color: var(--primary-blue);">
+    <h2 style="margin: 0; font-size: 1.5rem;">Select Chapter:</h2>
+    <select id="chapter-select" onchange="changeChapter(this.value)" class="btn" style="background: var(--bg-dark); color: var(--text-main); font-size: 1.1rem; border: 1px solid var(--primary-blue); cursor: pointer;">
+        <option value="1">Chapter 1: Intro to Tech Comm</option>
+        <option value="2">Chapter 2: Proofreading Strategies</option>
+    </select>
+</div>
                 
                 <div class="stats-grid">
                     <div class="stat-card glass-card">
@@ -64,6 +70,7 @@
                 <h1 class="page-title">Study Beats: Chapter 1 Content</h1>
                 
                 <div class="accordion-container" id="beats-container">
+                    <div id="beats-ch1" class="chapter-beats">
                     
                     <div class="accordion-item glass-card">
                         <div class="accordion-header" onclick="toggleBeat(this)">
@@ -168,7 +175,41 @@
                         </div>
                     </div>
 
+            </div>
+
+        <div id="beats-ch2" class="chapter-beats" style="display: none;">
+            
+            <div class="accordion-item glass-card">
+                <div class="accordion-header" onclick="toggleBeat(this)">
+                    <span>1. Importance of Proofreading</span>
+                    <i class="fas fa-chevron-down"></i>
                 </div>
+                <div class="accordion-content">
+                    <div class="accordion-content-inner">
+                        <p>Basic errors will distract the reader and make the writer look careless.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item glass-card">
+                <div class="accordion-header" onclick="toggleBeat(this)">
+                    <span>2. Effective Strategies</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-content-inner">
+                        <ul>
+                            <li><strong>Save it for the final draft:</strong> Don't proofread while drafting.</li>
+                            <li><strong>Take a break:</strong> Rest before proofreading.</li>
+                            <li><strong>Work from hard copy:</strong> Spot mistakes on paper.</li>
+                            <li><strong>Proofread multiple times:</strong> Read more than once.</li>
+                            <li><strong>Don't rely only on AI:</strong> Never rely completely on Grammarly.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div> </div>
             </section>
 
             <section id="flashcards" class="page-section">
