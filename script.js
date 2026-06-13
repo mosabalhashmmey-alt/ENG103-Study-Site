@@ -1,1 +1,1 @@
-console.log("ENG103 Study Hub Loaded");
+alert("ENG103 Study Hub Loaded Successfully!");
