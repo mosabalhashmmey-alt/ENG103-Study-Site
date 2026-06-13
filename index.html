@@ -1,43 +1,274 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<title>ENG103 Study Site</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ENG103 Study Hub</title>
 
 <style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
 body{
-font-family:Arial;
-background:#0d1117;
+background:#07111f;
 color:white;
-text-align:center;
-padding:50px;
+padding:30px;
 }
 
-h1{
-color:#58a6ff;
+.header{
+background:#0d1b2a;
+border:1px solid #1f3a5f;
+border-radius:20px;
+padding:25px;
+margin-bottom:25px;
 }
 
-.card{
-background:#161b22;
+.header h1{
+color:#69c6ff;
+margin-bottom:10px;
+}
+
+.stats{
+display:flex;
+gap:15px;
+flex-wrap:wrap;
+margin-top:15px;
+}
+
+.badge{
+background:#10243d;
+padding:10px 15px;
+border-radius:20px;
+color:#69c6ff;
+}
+
+.buttons{
+display:flex;
+gap:10px;
+flex-wrap:wrap;
+margin-bottom:25px;
+}
+
+button{
+background:#29b6f6;
+color:white;
+border:none;
+padding:12px 20px;
+border-radius:10px;
+cursor:pointer;
+font-weight:bold;
+}
+
+button:hover{
+opacity:0.9;
+}
+
+.chapter{
+background:#0d1b2a;
 padding:20px;
 border-radius:15px;
-max-width:600px;
-margin:auto;
+margin-bottom:20px;
 }
-</style>
 
+.chapter h2{
+color:#69c6ff;
+margin-bottom:15px;
+}
+
+.beat{
+background:#10243d;
+padding:15px;
+border-radius:12px;
+margin-top:12px;
+}
+
+.beat-title{
+color:#69c6ff;
+font-weight:bold;
+margin-bottom:8px;
+}
+
+.hidden{
+display:none;
+}
+
+</style>
 </head>
 
 <body>
 
-<div class="card">
+<div class="header">
 
-<h1>ENG103 Study Site</h1>
+<h1>📘 ENG103 Study Hub</h1>
 
-<h2>Welcome Musab</h2>
+<p>Technical Writing & Communication</p>
 
-<p>This is my first study website hosted on GitHub Pages.</p>
+<div class="stats">
+<div class="badge">Chapters: 1</div>
+<div class="badge">Study Beats: 8</div>
+<div class="badge">Flashcards: 25</div>
+<div class="badge">Quiz Questions: 30</div>
+</div>
 
 </div>
+
+<div class="buttons">
+
+<button onclick="showSection('beats')">📚 Study Beats</button>
+
+<button onclick="showSection('flashcards')">🃏 Flashcards</button>
+
+<button onclick="showSection('quiz')">⚡ Quiz Mode</button>
+
+<button onclick="showSection('essay')">📝 Essay Q&A</button>
+
+</div>
+
+<!-- STUDY BEATS -->
+
+<div id="beats" class="chapter">
+
+<h2>Chapter 1 - Introduction to Technical Communication</h2>
+
+<div class="beat">
+<div class="beat-title">Beat 01</div>
+What is Technical Communication?
+</div>
+
+<div class="beat">
+<div class="beat-title">Beat 02</div>
+Examples of Technical Communication
+</div>
+
+<div class="beat">
+<div class="beat-title">Beat 03</div>
+Technical Writing vs Academic Writing
+</div>
+
+<div class="beat">
+<div class="beat-title">Beat 04</div>
+Who Creates Technical Communication?
+</div>
+
+<div class="beat">
+<div class="beat-title">Beat 05</div>
+Main Features of Technical Communication
+</div>
+
+<div class="beat">
+<div class="beat-title">Beat 06</div>
+Three Purposes of Technical Communication
+</div>
+
+<div class="beat">
+<div class="beat-title">Beat 07</div>
+Common Technical Documents
+</div>
+
+<div class="beat">
+<div class="beat-title">Beat 08</div>
+Classification of Technical Documents
+</div>
+
+</div>
+
+<!-- FLASHCARDS -->
+
+<div id="flashcards" class="chapter hidden">
+
+<h2>Flashcards</h2>
+
+<div class="beat">
+Q: What is Technical Communication?
+<br><br>
+A: Exchange of information that helps people solve problems.
+</div>
+
+<div class="beat">
+Q: Technical Writing is Reader-Based or Writer-Based?
+<br><br>
+A: Reader-Based.
+</div>
+
+<div class="beat">
+Q: What are the 3 purposes of Technical Communication?
+<br><br>
+A: Informational, Instructional, Persuasive.
+</div>
+
+</div>
+
+<!-- QUIZ -->
+
+<div id="quiz" class="chapter hidden">
+
+<h2>Quiz Mode</h2>
+
+<div class="beat">
+
+What is Technical Communication?
+
+<br><br>
+
+A) Academic Writing
+
+<br>
+
+B) Creative Writing
+
+<br>
+
+✅ C) Exchange of information for practical purposes
+
+<br>
+
+D) Personal Writing
+
+</div>
+
+</div>
+
+<!-- ESSAY -->
+
+<div id="essay" class="chapter hidden">
+
+<h2>Essay Q&A</h2>
+
+<div class="beat">
+
+Define Technical Communication.
+
+<br><br>
+
+Answer:
+
+Technical communication is the exchange of information that helps people interact with technology and solve problems.
+
+</div>
+
+</div>
+
+<script>
+
+function showSection(id){
+
+document.getElementById("beats").classList.add("hidden");
+document.getElementById("flashcards").classList.add("hidden");
+document.getElementById("quiz").classList.add("hidden");
+document.getElementById("essay").classList.add("hidden");
+
+document.getElementById(id).classList.remove("hidden");
+
+}
+
+</script>
 
 </body>
 </html>
