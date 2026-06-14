@@ -200,6 +200,51 @@ const contentDB = {
             { q: "An effective summary should be written in a:", options: ["Highly technical style", "Nontechnical style (simple English)", "Poetic style"], answer: 1 },
             { q: "Which element ensures all important information is included in a summary?", options: ["Completeness", "Conciseness", "Accuracy"], answer: 0 }
         ]
+    },
+    14: {
+        overview: "This chapter covers special types of summaries including closing summaries, informative abstracts, descriptive abstracts, and executive summaries, along with ethical considerations and strategies.",
+        flashcards: [
+            { q: "What are the 4 special types of summaries?", a: "Closing Summary, Informative Abstract, Descriptive Abstract, and Executive Summary." },
+            { q: "Where does a closing summary appear?", a: "In the concluding section of a formal report or proposal." },
+            { q: "What is the purpose of an informative abstract?", a: "It condenses what the whole document contains, summarizing the issue, methods, findings, and conclusion." },
+            { q: "What does a descriptive abstract do?", a: "It states what a document covers without getting into details, helping readers decide whether to read the report." },
+            { q: "What is a potential ethical issue when summarizing?", a: "It might fail to communicate full complexity or distort the original writer's intent and tone." }
+        ],
+        quizzes: [
+            { q: "Which summary appears in the concluding section to help readers review major findings?", options: ["Closing Summary", "Executive Summary", "Descriptive Abstract"], answer: 0 },
+            { q: "Which type of abstract is the most compressed and only states what a document covers?", options: ["Informative Abstract", "Descriptive Abstract", "Closing Summary"], answer: 1 },
+            { q: "To avoid plagiarism when writing a summary, you should:", options: ["Copy the text exactly", "Rewrite the key information in your own words", "Change the facts"], answer: 1 }
+        ]
+    },
+    15: {
+        overview: "This chapter introduces resumes, their main parts, organization types, and strategies for creating a strong personal advertisement for employment.",
+        flashcards: [
+            { q: "What is a resume?", a: "It is an applicant's personal advertisement for employment that presents their qualifications." },
+            { q: "What is the purpose of a resume?", a: "To give an employer an instant overview of what you can do for them." },
+            { q: "Name the main parts of a resume.", a: "Contact information, career objectives, education, work experience, personal data/interests, and references." },
+            { q: "What is a standard (reverse chronological) resume?", a: "It lists the most recent school and job first." },
+            { q: "What is a functional resume?", a: "It highlights skills relevant to a particular job rather than just chronological history." }
+        ],
+        quizzes: [
+            { q: "A resume is designed to:", options: ["Give an employer an instant overview of your qualifications", "Detail your entire life story", "Replace an interview"], answer: 0 },
+            { q: "Which type of resume highlights skills relevant to a particular job instead of just listing chronological history?", options: ["Standard resume", "Functional resume", "Objective resume"], answer: 1 },
+            { q: "Which of the following is a recommended strategy for resumes?", options: ["Limit the resume to a single page", "Invent qualifications to look better", "Include all unrelated experience"], answer: 0 }
+        ]
+    },
+    16: {
+        overview: "This chapter covers application letters, dossiers, portfolios, interview strategies, and follow-up letters used during a job search.",
+        flashcards: [
+            { q: "What is an application letter (cover letter)?", a: "A letter explaining how your qualifications fit a particular job." },
+            { q: "What is the difference between solicited and unsolicited application letters?", a: "Solicited is for an advertised job; unsolicited is for an unadvertised job." },
+            { q: "What should you bring to an interview?", a: "A briefcase, pen, notepad, your own questions, extra copies of your resume, and a portfolio." },
+            { q: "Name two types of follow-up letters.", a: "Thank you letters and Acceptance/Refusal letters." },
+            { q: "Should you criticize a previous employer during an interview?", a: "No, never criticize a previous employer." }
+        ],
+        quizzes: [
+            { q: "An application letter written for an unadvertised job is called:", options: ["A solicited letter", "An unsolicited letter", "A refusal letter"], answer: 1 },
+            { q: "During an interview, if you don't know the answer to a question, you should:", options: ["Make up a convincing lie", "Say so and relax", "Start talking about your hobbies"], answer: 1 },
+            { q: "When should a 'Thank You' letter be sent?", options: ["Before applying for the job", "Immediately after the interview", "Only if you get hired"], answer: 1 }
+        ]
     }
 };
 
