@@ -145,6 +145,35 @@ const contentDB = {
             { q: "What is the main question a basic usability survey tries to answer?", options: ["How much did the document cost?", "Do these instructions carry out the task safely, efficiently, and accurately?", "How long did it take to write?"], answer: 1 },
             { q: "Which of the following is a recommended strategy for writing procedures?", options: ["Provide minimal details", "Design for maximum accessibility", "Ignore ethical and legal implications"], answer: 1 }
         ]
+    },
+    10: {
+        overview: "This chapter covers the importance, purposes, types, and strategies of definitions in technical communication.",
+        flashcards: [
+            { q: "Why are definitions important in technical writing?", a: "They explain specialized terms to people who lack expertise in a particular field." },
+            { q: "What is a parenthetical definition?", a: "Clarifying the meaning of a word using a more familiar synonym or phrase in parenthesis." },
+            { q: "What method does a sentence definition use?", a: "The 'term-class-features' method." },
+            { q: "Give three methods for expanding a definition.", a: "Etymology, negation, and operating principle." },
+            { q: "Where should you place an expanded definition in a printed document?", a: "Near the beginning of a long document or in an appendix." }
+        ],
+        quizzes: [
+            { q: "Which type of definition uses the 'term-class-features' method?", options: ["Parenthetical", "Sentence", "Expanded"], answer: 1 },
+            { q: "Which of the following is a method for expansion definitions?", options: ["Visuals", "Negation", "Both A and B"], answer: 2 },
+            { q: "Why is an accurate definition essential from a legal perspective?", options: ["It makes the text longer", "The writer is legally responsible for the document", "It improves font readability"], answer: 1 }
+        ]
+    },
+    11: {
+        overview: "This chapter focuses on using audience-centered visuals, exploring their importance, types, and best practices for tables, graphs, diagrams, and icons.",
+        flashcards: [
+            { q: "Why are visuals important?", a: "They help readers interpret and remember complex information." },
+            { q: "What do bar graphs depict?", a: "Changes over time, patterns, and trends." },
+            { q: "What is the difference between an exploded diagram and a cutaway diagram?", a: "Exploded shows separated parts; cutaway shows the interior by 'cutting away' the shell." },
+            { q: "What is the difference between an icon and a symbol?", a: "An icon resembles the item it represents; a symbol is abstract and gets meaning across without resembling it." }
+        ],
+        quizzes: [
+            { q: "Which type of graph is best for describing changes over time and trends?", options: ["Line graph", "Bar graph", "Pie chart"], answer: 1 },
+            { q: "What do cutaway diagrams show?", options: ["The interior of an object", "Separated parts of an object", "Geographical locations"], answer: 0 },
+            { q: "Which of the following is TRUE about symbols?", options: ["They resemble the items they represent", "They get the meaning across without resembling the item", "They are always photographs"], answer: 1 }
+        ]
     }
 };
 
