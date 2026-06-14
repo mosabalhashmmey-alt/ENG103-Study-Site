@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ENG103 Study Hub - Chapter 1</title>
+    <title>ENG103 Study Hub - Study Smart</title>
     
     <link rel="stylesheet" href="style.css">
     
@@ -39,14 +39,16 @@
                     </div>
                 </header>
 
-              <div class="glass-card mb-4" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; border-color: var(--primary-blue);">
-    <h2 style="margin: 0; font-size: 1.5rem;">Select Chapter:</h2>
-    <select id="chapter-select" onchange="changeChapter(this.value)" class="btn" style="background: var(--bg-dark); color: var(--text-main); font-size: 1rem; border: 1px solid var(--primary-blue); cursor: pointer; max-width: 100%; flex: 1; min-width: 250px;">
-        <option value="1">Chapter 1: Intro to Tech Comm</option>
-        <option value="2">Chapter 2: Proofreading Strategies</option>
-        <option value="3">Chapter 3: The Research Process</option>
-    </select>
-</div>
+                <div class="glass-card mb-4" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; border-color: var(--primary-blue);">
+                    <h2 style="margin: 0; font-size: 1.5rem;">Select Chapter:</h2>
+                    <select id="chapter-select" onchange="changeChapter(this.value)" class="btn" style="background: var(--bg-dark); color: var(--text-main); font-size: 1rem; border: 1px solid var(--primary-blue); cursor: pointer; max-width: 100%; flex: 1; min-width: 250px;">
+                        <option value="1">Chapter 1: Intro to Tech Comm</option>
+                        <option value="2">Chapter 2: Proofreading Strategies</option>
+                        <option value="3">Chapter 3: The Research Process</option>
+                        <option value="4">Chapter 4: Usable Information</option>
+                        <option value="5">Chapter 5: Ethical Issues</option>
+                    </select>
+                </div>
                 
                 <div class="stats-grid">
                     <div class="stat-card glass-card">
@@ -71,252 +73,348 @@
                 <h1 class="page-title">Study Beats Content</h1>
                 
                 <div class="accordion-container" id="beats-container">
-                    <div id="beats-ch1" class="chapter-beats">
                     
-                    <div class="accordion-item glass-card">
-                        <div class="accordion-header" onclick="toggleBeat(this)">
-                            <span>1. What is technical communication?</span>
-                            <i class="fas fa-chevron-down"></i>
+                    <div id="beats-ch1" class="chapter-beats">
+                        <div class="accordion-item glass-card">
+                            <div class="accordion-header" onclick="toggleBeat(this)">
+                                <span>1. What is technical communication?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="accordion-content">
+                                <div class="accordion-content-inner">
+                                    <p><strong>Definition:</strong> The exchange of information that helps people interact with technology, achieve workplace goals, and solve complex problems.</p>
+                                    <p><strong>Examples:</strong> Cell phone instruction manuals, printer/microwave oven setup information, online courses, writing emails and reports, etc.</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="accordion-content">
-                            <div class="accordion-content-inner">
-                                <p><strong>Definition:</strong> The exchange of information that helps people interact with technology, achieve workplace goals, and solve complex problems.</p>
-                                <p><strong>Examples:</strong> Cell phone instruction manuals, printer/microwave oven setup information, online courses, writing emails and reports, etc.</p>
+
+                        <div class="accordion-item glass-card">
+                            <div class="accordion-header" onclick="toggleBeat(this)">
+                                <span>2. Technical Writing vs. Academic Writing</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="accordion-content">
+                                <div class="accordion-content-inner">
+                                    <ul>
+                                        <li><strong>Technical Writing:</strong> Reader based, task oriented, and design based.</li>
+                                        <li><strong>Academic Writing:</strong> Writer based, supporting the writer's stance, and relies on paragraph form.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item glass-card">
+                            <div class="accordion-header" onclick="toggleBeat(this)">
+                                <span>3. Who creates technical communication?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="accordion-content">
+                                <div class="accordion-content-inner">
+                                    <ul>
+                                        <li>All professionals function as technical communicators.</li>
+                                        <li>Anyone in a workplace setting can be a technical communicator.</li>
+                                        <li>Experts in any field are often required to present their knowledge to nonexpert audiences.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item glass-card">
+                            <div class="accordion-header" onclick="toggleBeat(this)">
+                                <span>4. Main features of technical communication</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="accordion-content">
+                                <div class="accordion-content-inner">
+                                    <ol>
+                                        <li>Focuses on the reader not the writer (user-centered communication).</li>
+                                        <li>Is efficient and accessible.</li>
+                                        <li>Is clear and relevant.</li>
+                                        <li>Uses media effectively.</li>
+                                        <li>Is created by both individuals and teams.</li>
+                                        <li>Targets a global audience.</li>
+                                        <li>Is persuasive and truthful.</li>
+                                        <li>Is based on research.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item glass-card">
+                            <div class="accordion-header" onclick="toggleBeat(this)">
+                                <span>5. Three purposes of technical communication</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="accordion-content">
+                                <div class="accordion-content-inner">
+                                    <ul>
+                                        <li><strong>Informational purpose:</strong> Anticipate and answer questions.</li>
+                                        <li><strong>Instructional purpose:</strong> Help people to perform a task.</li>
+                                        <li><strong>Persuasive purpose:</strong> Encourage readers to take an action.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item glass-card">
+                            <div class="accordion-header" onclick="toggleBeat(this)">
+                                <span>6. Common types of technical documents</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="accordion-content">
+                                <div class="accordion-content-inner">
+                                    <ul style="column-count: 2;">
+                                        <li>Memos</li>
+                                        <li>Emails</li>
+                                        <li>Letters</li>
+                                        <li>Instructions</li>
+                                        <li>Procedures</li>
+                                        <li>Manuals</li>
+                                        <li>Brochures</li>
+                                        <li>Proposals</li>
+                                        <li>Reports</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="accordion-item glass-card">
-                        <div class="accordion-header" onclick="toggleBeat(this)">
-                            <span>2. Technical Writing vs. Academic Writing</span>
-                            <i class="fas fa-chevron-down"></i>
+                    <div id="beats-ch2" class="chapter-beats" style="display: none;">
+                        <div class="accordion-item glass-card">
+                            <div class="accordion-header" onclick="toggleBeat(this)">
+                                <span>1. Importance of Proofreading</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="accordion-content">
+                                <div class="accordion-content-inner">
+                                    <p>Basic errors will distract the reader and make the writer look careless.</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="accordion-content">
-                            <div class="accordion-content-inner">
-                                <ul>
-                                    <li><strong>Technical Writing:</strong> Reader based, task oriented, and design based.</li>
-                                    <li><strong>Academic Writing:</strong> Writer based, supporting the writer's stance, and relies on paragraph form.</li>
-                                </ul>
+
+                        <div class="accordion-item glass-card">
+                            <div class="accordion-header" onclick="toggleBeat(this)">
+                                <span>2. Effective Strategies</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="accordion-content">
+                                <div class="accordion-content-inner">
+                                    <ul>
+                                        <li><strong>Save it for the final draft:</strong> Don't proofread while drafting.</li>
+                                        <li><strong>Take a break:</strong> Rest before proofreading.</li>
+                                        <li><strong>Work from hard copy:</strong> Spot mistakes on paper.</li>
+                                        <li><strong>Proofread multiple times:</strong> Read more than once.</li>
+                                        <li><strong>Don't rely only on AI:</strong> Never rely completely on Grammarly.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+
+                    <div id="beats-ch3" class="chapter-beats" style="display: none;">
+                        <div class="accordion-item glass-card">
+                            <div class="accordion-header" onclick="toggleBeat(this)">
+                                <span>1. Thinking Critically About Research</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="accordion-content">
+                                <div class="accordion-content-inner">
+                                    <p>Critical thinking means testing the quality of information and accuracy of interpretations. Instead of accepting information at face value, you should examine, evaluate, verify, analyze, and weigh alternatives.</p>
+                                    <p><strong>Effective Strategies:</strong> Ask the right questions, explore a balance of views, explore topic in depth, evaluate sources, and interpret findings objectively.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item glass-card">
+                            <div class="accordion-header" onclick="toggleBeat(this)">
+                                <span>2. Primary Vs. Secondary Sources</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="accordion-content">
+                                <div class="accordion-content-inner">
+                                    <ul>
+                                        <li><strong>Primary Research:</strong> Getting information directly from the source (e.g., conducting interviews, surveys, observing people or events).</li>
+                                        <li><strong>Secondary Research:</strong> Getting information second-hand by reading compiled works (e.g., books, articles, websites).</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item glass-card">
+                            <div class="accordion-header" onclick="toggleBeat(this)">
+                                <span>3. Hard-Copy Vs. Web-Based Sources</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="accordion-content">
+                                <div class="accordion-content-inner">
+                                    <p><strong>Hard-Copy Sources:</strong></p>
+                                    <ul>
+                                        <li><em>Benefits:</em> Found on shelves with related materials, easy to determine author/date, easier to preserve and keep secure.</li>
+                                        <li><em>Drawbacks:</em> Time-consuming to search, offer only text/images, hard to update.</li>
+                                    </ul>
+                                    <p><strong>Web-Based Sources:</strong></p>
+                                    <ul>
+                                        <li><em>Benefits:</em> More current and accessible, searches can be narrowed/broadened easily, offers material with no hard-copy equivalent.</li>
+                                        <li><em>Drawbacks:</em> Might only access recent material, not always reliable, user might get confused by too many choices.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item glass-card">
+                            <div class="accordion-header" onclick="toggleBeat(this)">
+                                <span>4. Strategies for Internet Research</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="accordion-content">
+                                <div class="accordion-content-inner">
+                                    <ul>
+                                        <li>Select technical keywords rather than general ones.</li>
+                                        <li>Identify the site's purpose and sponsor.</li>
+                                        <li>Assess the currency of the site and its materials.</li>
+                                        <li>Assess the author's credentials and assertions.</li>
+                                        <li>Download only what you need, use it ethically, and cite sources.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item glass-card">
+                            <div class="accordion-header" onclick="toggleBeat(this)">
+                                <span>5. Categories of Hard-Copy Reference Works</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="accordion-content">
+                                <div class="accordion-content-inner">
+                                    <ul style="column-count: 2;">
+                                        <li>Bibliographies</li>
+                                        <li>Indexes</li>
+                                        <li>Encyclopedias</li>
+                                        <li>Dictionaries</li>
+                                        <li>Handbooks</li>
+                                        <li>Almanacs</li>
+                                        <li>Directories</li>
+                                        <li>Abstracts</li>
+                                        <li>Gray Literature</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+
+                    <div id="beats-ch4" class="chapter-beats" style="display: none;">
+                        <div class="accordion-item glass-card">
+                            <div class="accordion-header" onclick="toggleBeat(this)">
+                                <span>1. Providing Usable Information</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="accordion-content">
+                                <div class="accordion-content-inner">
+                                    <p>This chapter focuses on providing audiences with usable information by considering the <strong>6 essential steps</strong> when writing a technical document.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="accordion-item glass-card">
-                        <div class="accordion-header" onclick="toggleBeat(this)">
-                            <span>3. Who creates technical communication?</span>
-                            <i class="fas fa-chevron-down"></i>
+                    <div id="beats-ch5" class="chapter-beats" style="display: none;">
+                        <div class="accordion-item glass-card">
+                            <div class="accordion-header" onclick="toggleBeat(this)">
+                                <span>1. What Does Ethics Mean?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="accordion-content">
+                                <div class="accordion-content-inner">
+                                    <ul>
+                                        <li>Ethical questions often revolve around technology.</li>
+                                        <li>Ethical stance requires a personal decision.</li>
+                                        <li>Ethical decisions are <strong>not</strong> always black and white.</li>
+                                        <li>Your ethical decisions <strong>do</strong> affect the users, your company, your society, and your job.</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-                        <div class="accordion-content">
-                            <div class="accordion-content-inner">
-                                <ul>
-                                    <li>All professionals function as technical communicators.</li>
-                                    <li>Anyone in a workplace setting can be a technical communicator.</li>
-                                    <li>Experts in any field are often required to present their knowledge to nonexpert audiences.</li>
-                                </ul>
+
+                        <div class="accordion-item glass-card">
+                            <div class="accordion-header" onclick="toggleBeat(this)">
+                                <span>2. Types of Ethical Choices</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="accordion-content">
+                                <div class="accordion-content-inner">
+                                    <ul>
+                                        <li><strong>Medical technologies:</strong> (e.g., genetic testing) raise questions about personal privacy & medical insurance.</li>
+                                        <li><strong>Banking & retail operations:</strong> (collecting personal info) raise concerns about how this information is used and who has access to it.</li>
+                                        <li><strong>Environmental pollutants:</strong> (e.g., pesticides or smokestacks) raise serious questions about the health of the planet.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item glass-card">
+                            <div class="accordion-header" onclick="toggleBeat(this)">
+                                <span>3. Why Does Ethics Matter?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="accordion-content">
+                                <div class="accordion-content-inner">
+                                    <p>Unethical decisions can harm a company's reputation as well as workers and customers.</p>
+                                    <p><strong>Example:</strong> When an instruction manual is written & vital safety information is purposely omitted to save on the cost of printing, people can be injured.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item glass-card">
+                            <div class="accordion-header" onclick="toggleBeat(this)">
+                                <span>4. Examples of Unethical Communication</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="accordion-content">
+                                <div class="accordion-content-inner">
+                                    <ul style="column-count: 2;">
+                                        <li>Plagiarizing work of others</li>
+                                        <li>Falsifying information</li>
+                                        <li>Suppressing information</li>
+                                        <li>Exaggerating claims</li>
+                                        <li>Using images that conceal truth</li>
+                                        <li>Stealing proprietary info</li>
+                                        <li>Misusing electronic info</li>
+                                        <li>Exploiting cultural differences</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item glass-card">
+                            <div class="accordion-header" onclick="toggleBeat(this)">
+                                <span>5. Strategies for Avoiding Ethical Abuses</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="accordion-content">
+                                <div class="accordion-content-inner">
+                                    <ul>
+                                        <li>Always cite your sources if the information is not your own.</li>
+                                        <li>Give the audience everything it needs to know and a clear understanding.</li>
+                                        <li>Never manipulate information or data in your writing or visuals.</li>
+                                        <li>Use common sense and follow company confidentiality guidelines.</li>
+                                        <li>Do not exploit cultural inequalities.</li>
+                                        <li><strong>Ask yourself:</strong> "Would I stand behind what I have created if held publicly accountable for it?"</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="accordion-item glass-card">
-                        <div class="accordion-header" onclick="toggleBeat(this)">
-                            <span>4. Main features of technical communication</span>
-                            <i class="fas fa-chevron-down"></i>
-                        </div>
-                        <div class="accordion-content">
-                            <div class="accordion-content-inner">
-                                <ol>
-                                    <li>Focuses on the reader not the writer (user-centered communication).</li>
-                                    <li>Is efficient and accessible.</li>
-                                    <li>Is clear and relevant.</li>
-                                    <li>Uses media effectively.</li>
-                                    <li>Is created by both individuals and teams.</li>
-                                    <li>Targets a global audience.</li>
-                                    <li>Is persuasive and truthful.</li>
-                                    <li>Is based on research.</li>
-                                </ol>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item glass-card">
-                        <div class="accordion-header" onclick="toggleBeat(this)">
-                            <span>5. Three purposes of technical communication</span>
-                            <i class="fas fa-chevron-down"></i>
-                        </div>
-                        <div class="accordion-content">
-                            <div class="accordion-content-inner">
-                                <ul>
-                                    <li><strong>Informational purpose:</strong> Anticipate and answer questions.</li>
-                                    <li><strong>Instructional purpose:</strong> Help people to perform a task.</li>
-                                    <li><strong>Persuasive purpose:</strong> Encourage readers to take an action.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item glass-card">
-                        <div class="accordion-header" onclick="toggleBeat(this)">
-                            <span>6. Common types of technical documents</span>
-                            <i class="fas fa-chevron-down"></i>
-                        </div>
-                        <div class="accordion-content">
-                            <div class="accordion-content-inner">
-                                <ul style="column-count: 2;">
-                                    <li>Memos</li>
-                                    <li>Emails</li>
-                                    <li>Letters</li>
-                                    <li>Instructions</li>
-                                    <li>Procedures</li>
-                                    <li>Manuals</li>
-                                    <li>Brochures</li>
-                                    <li>Proposals</li>
-                                    <li>Reports</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-            </div>
-
-        <div id="beats-ch2" class="chapter-beats" style="display: none;">
-            
-            <div class="accordion-item glass-card">
-                <div class="accordion-header" onclick="toggleBeat(this)">
-                    <span>1. Importance of Proofreading</span>
-                    <i class="fas fa-chevron-down"></i>
                 </div>
-                <div class="accordion-content">
-                    <div class="accordion-content-inner">
-                        <p>Basic errors will distract the reader and make the writer look careless.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="accordion-item glass-card">
-                <div class="accordion-header" onclick="toggleBeat(this)">
-                    <span>2. Effective Strategies</span>
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-                <div class="accordion-content">
-                    <div class="accordion-content-inner">
-                        <ul>
-                            <li><strong>Save it for the final draft:</strong> Don't proofread while drafting.</li>
-                            <li><strong>Take a break:</strong> Rest before proofreading.</li>
-                            <li><strong>Work from hard copy:</strong> Spot mistakes on paper.</li>
-                            <li><strong>Proofread multiple times:</strong> Read more than once.</li>
-                            <li><strong>Don't rely only on AI:</strong> Never rely completely on Grammarly.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-        </div> 
-        
-        <div id="beats-ch3" class="chapter-beats" style="display: none;">
-            
-            <div class="accordion-item glass-card">
-                <div class="accordion-header" onclick="toggleBeat(this)">
-                    <span>1. Thinking Critically About Research</span>
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-                <div class="accordion-content">
-                    <div class="accordion-content-inner">
-                        <p>Critical thinking means testing the quality of information and accuracy of interpretations. Instead of accepting information at face value, you should examine, evaluate, verify, analyze, and weigh alternatives.</p>
-                        <p><strong>Effective Strategies:</strong> Ask the right questions, explore a balance of views, explore topic in depth, evaluate sources, and interpret findings objectively.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="accordion-item glass-card">
-                <div class="accordion-header" onclick="toggleBeat(this)">
-                    <span>2. Primary Vs. Secondary Sources</span>
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-                <div class="accordion-content">
-                    <div class="accordion-content-inner">
-                        <ul>
-                            <li><strong>Primary Research:</strong> Getting information directly from the source (e.g., conducting interviews, surveys, observing people or events).</li>
-                            <li><strong>Secondary Research:</strong> Getting information second-hand by reading compiled works (e.g., books, articles, websites).</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="accordion-item glass-card">
-                <div class="accordion-header" onclick="toggleBeat(this)">
-                    <span>3. Hard-Copy Vs. Web-Based Sources</span>
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-                <div class="accordion-content">
-                    <div class="accordion-content-inner">
-                        <p><strong>Hard-Copy Sources:</strong></p>
-                        <ul>
-                            <li><em>Benefits:</em> Found on shelves with related materials, easy to determine author/date, easier to preserve and keep secure.</li>
-                            <li><em>Drawbacks:</em> Time-consuming to search, offer only text/images, hard to update.</li>
-                        </ul>
-                        <p><strong>Web-Based Sources:</strong></p>
-                        <ul>
-                            <li><em>Benefits:</em> More current and accessible, searches can be narrowed/broadened easily, offers material with no hard-copy equivalent.</li>
-                            <li><em>Drawbacks:</em> Might only access recent material, not always reliable, user might get confused by too many choices.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="accordion-item glass-card">
-                <div class="accordion-header" onclick="toggleBeat(this)">
-                    <span>4. Strategies for Internet Research</span>
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-                <div class="accordion-content">
-                    <div class="accordion-content-inner">
-                        <ul>
-                            <li>Select technical keywords rather than general ones.</li>
-                            <li>Identify the site's purpose and sponsor.</li>
-                            <li>Assess the currency of the site and its materials.</li>
-                            <li>Assess the author's credentials and assertions.</li>
-                            <li>Download only what you need, use it ethically, and cite sources.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="accordion-item glass-card">
-                <div class="accordion-header" onclick="toggleBeat(this)">
-                    <span>5. Categories of Hard-Copy Reference Works</span>
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-                <div class="accordion-content">
-                    <div class="accordion-content-inner">
-                        <ul style="column-count: 2;">
-                            <li>Bibliographies</li>
-                            <li>Indexes</li>
-                            <li>Encyclopedias</li>
-                            <li>Dictionaries</li>
-                            <li>Handbooks</li>
-                            <li>Almanacs</li>
-                            <li>Directories</li>
-                            <li>Abstracts</li>
-                            <li>Gray Literature</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-        </div> 
-        </div>
             </section>
 
             <section id="flashcards" class="page-section">
                 <h1 class="page-title">Interactive Flashcards</h1>
-                <div id="flashcard-container">
-                    </div>
+                <div id="flashcard-container"></div>
             </section>
 
             <section id="quiz" class="page-section">
                 <h1 class="page-title">Quiz Arena</h1>
-                <div id="quiz-container">
-                    </div>
+                <div id="quiz-container"></div>
             </section>
 
         </main>
