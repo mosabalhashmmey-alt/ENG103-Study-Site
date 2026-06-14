@@ -1,25 +1,45 @@
 const contentDB = {
-    flashcards: [
-        { q: "What is Technical Communication?", a: "The exchange of information that helps people interact with technology, achieve workplace goals, and solve complex problems." },
-        { q: "Give 3 examples of technical communication.", a: "Cell phone manuals, printer setup instructions, emails, and reports." },
-        { q: "Is Technical Writing reader-based or writer-based?", a: "Reader-based." },
-        { q: "Is Academic Writing reader-based or writer-based?", a: "Writer-based." },
-        { q: "Who creates technical communication?", a: "Professionals, experts, and anyone in a workplace setting." },
-        { q: "What does 'user-centered communication' mean?", a: "It focuses on the reader, not the writer." },
-        { q: "List 3 main features of technical communication.", a: "Efficient and accessible, clear and relevant, uses media effectively." },
-        { q: "What is the 'Informational' purpose?", a: "To anticipate and answer questions." },
-        { q: "What is the 'Instructional' purpose?", a: "To help people perform a specific task." },
-        { q: "What is the 'Persuasive' purpose?", a: "To encourage readers to take an action." }
-    ],
-    quizzes: [
-        { q: "Which of the following defines technical communication?", options: ["A formal style of writing used in universities.", "The exchange of information to help people interact with tech and solve problems.", "Writing designed to entertain a global audience."], answer: 1 },
-        { q: "Which of these is an example of technical communication?", options: ["A thesis or dissertation", "A cell phone instruction manual", "An academic research paper"], answer: 1 },
-        { q: "Academic writing is typically:", options: ["Reader-based", "Task-oriented", "Writer-based"], answer: 2 },
-        { q: "Technical writing relies heavily on:", options: ["Paragraph form only", "Design-based elements (visuals, digital, etc.)", "Supporting the writer's stance"], answer: 1 },
-        { q: "What is the goal of an 'Instructional' document?", options: ["Anticipate and answer questions", "Encourage readers to take an action", "Help people to perform a task"], answer: 2 }
-    ]
+    1: {
+        flashcards: [
+            { q: "What is Technical Communication?", a: "The exchange of information that helps people interact with technology, achieve workplace goals, and solve complex problems." },
+            { q: "Give 3 examples of technical communication.", a: "Cell phone manuals, printer setup instructions, emails, and reports." },
+            { q: "Is Technical Writing reader-based or writer-based?", a: "Reader-based." },
+            { q: "Is Academic Writing reader-based or writer-based?", a: "Writer-based." },
+            { q: "Who creates technical communication?", a: "Professionals, experts, and anyone in a workplace setting." },
+            { q: "What does 'user-centered communication' mean?", a: "It focuses on the reader, not the writer." },
+            { q: "List 3 main features of technical communication.", a: "Efficient and accessible, clear and relevant, uses media effectively." },
+            { q: "What is the 'Informational' purpose?", a: "To anticipate and answer questions." },
+            { q: "What is the 'Instructional' purpose?", a: "To help people perform a specific task." },
+            { q: "What is the 'Persuasive' purpose?", a: "To encourage readers to take an action." }
+        ],
+        quizzes: [
+            { q: "Which of the following defines technical communication?", options: ["A formal style of writing used in universities.", "The exchange of information to help people interact with tech and solve problems.", "Writing designed to entertain a global audience."], answer: 1 },
+            { q: "Which of these is an example of technical communication?", options: ["A thesis or dissertation", "A cell phone instruction manual", "An academic research paper"], answer: 1 },
+            { q: "Academic writing is typically:", options: ["Reader-based", "Task-oriented", "Writer-based"], answer: 2 },
+            { q: "Technical writing relies heavily on:", options: ["Paragraph form only", "Design-based elements (visuals, digital, etc.)", "Supporting the writer's stance"], answer: 1 },
+            { q: "What is the goal of an 'Instructional' document?", options: ["Anticipate and answer questions", "Encourage readers to take an action", "Help people to perform a task"], answer: 2 }
+        ]
+    },
+    2: {
+        flashcards: [
+            { q: "Why is proofreading important?", a: "Basic errors distract the reader and make the writer look careless." },
+            { q: "Should you proofread immediately after writing?", a: "No, you should take a break before proofreading your final document." },
+            { q: "Is it better to proofread on a screen or hard copy?", a: "It is better to work from a hard copy." },
+            { q: "Should you rely completely on tools like Grammarly?", a: "No, never rely only on computerized writing aids." },
+            { q: "How many times should you proofread a document?", a: "You should proofread more than once." },
+            { q: "When is the best time to proofread?", a: "Save it for the final draft." }
+        ],
+        quizzes: [
+            { q: "What is a major consequence of failing to proofread?", options: ["It makes the document longer", "It distracts the reader and makes the writer look careless", "It improves the document design"], answer: 1 },
+            { q: "Which of the following is an effective strategy for proofreading?", options: ["Proofread immediately after writing", "Work from a hard copy", "Rely entirely on Grammarly"], answer: 1 },
+            { q: "True or False: You should proofread your document only once.", options: ["True", "False", "Only if it is an email"], answer: 1 },
+            { q: "When is the best time to focus on proofreading?", options: ["During the brainstorming phase", "While writing the first draft", "Save it for the final draft"], answer: 2 },
+            { q: "According to the strategies, how fast should you proofread?", options: ["As fast as possible", "Keep it slow", "Skim the document"], answer: 1 }
+        ]
+    }
 };
 
+let currentChapterId = 1;
 let userState = { xp: 0, level: 1, openedBeats: [] };
 
 function loadState() {
@@ -85,7 +105,7 @@ function toggleBeat(element) {
 }
 
 let currentCardIndex = 0;
-const cards = contentDB.flashcards;
+let cards = contentDB[currentChapterId].flashcards;
 
 function setupFlashcards() {
     const container = document.getElementById('flashcard-container');
@@ -107,16 +127,17 @@ function setupFlashcards() {
         <div class="tap-hint"><i class="fas fa-hand-pointer"></i> Tap to flip</div>
     `;
     renderFlashcard();
-    document.getElementById('active-flashcard').addEventListener('click', function() {
+    
+    document.getElementById('active-flashcard').onclick = function() {
         this.classList.toggle('flipped');
         if(this.classList.contains('flipped') && Math.random() > 0.5) addXP(1);
-    });
-    document.getElementById('prev-card').addEventListener('click', () => {
+    };
+    document.getElementById('prev-card').onclick = () => {
         if (currentCardIndex > 0) { currentCardIndex--; renderFlashcard(); }
-    });
-    document.getElementById('next-card').addEventListener('click', () => {
+    };
+    document.getElementById('next-card').onclick = () => {
         if (currentCardIndex < cards.length - 1) { currentCardIndex++; renderFlashcard(); }
-    });
+    };
 }
 
 function renderFlashcard() {
@@ -129,7 +150,7 @@ function renderFlashcard() {
 let currentQuizIndex = 0;
 let score = 0;
 let selectedOption = null;
-const quizzes = contentDB.quizzes;
+let quizzes = contentDB[currentChapterId].quizzes;
 
 function setupQuiz() {
     const container = document.getElementById('quiz-container');
@@ -161,8 +182,8 @@ function setupQuiz() {
             </div>
         </div>
     `;
-    document.getElementById('start-quiz-btn').addEventListener('click', startQuiz);
-    document.getElementById('restart-quiz-btn').addEventListener('click', startQuiz);
+    document.getElementById('start-quiz-btn').onclick = startQuiz;
+    document.getElementById('restart-quiz-btn').onclick = startQuiz;
 }
 
 function startQuiz() {
@@ -229,6 +250,24 @@ function checkQuizAnswer() {
         }
     };
 }
+
+window.changeChapter = function(chapterId) {
+    currentChapterId = chapterId;
+
+    cards = contentDB[currentChapterId].flashcards;
+    quizzes = contentDB[currentChapterId].quizzes;
+
+    currentCardIndex = 0;
+    setupFlashcards();
+    setupQuiz();
+
+    document.querySelectorAll('.chapter-beats').forEach(div => div.style.display = 'none');
+    
+    const activeBeats = document.getElementById(`beats-ch${chapterId}`);
+    if(activeBeats) activeBeats.style.display = 'block';
+
+    showToast(`Switched to Chapter ${chapterId} Successfully!`);
+};
 
 window.onload = () => {
     loadState();
