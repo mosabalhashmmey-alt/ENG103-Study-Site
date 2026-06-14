@@ -91,4 +91,96 @@ const contentDB = {
         flashcards: [
             { q: "What is the difference between standard and non-standard structure?", a: "Standard uses intro, body, conclusion. Non-standard uses columns, colors, and images." },
             { q: "What are the two types of outlining notation?", a: "Alphanumeric and Decimal notation." },
-            { q: "How is
+            { q: "How is chunking handled differently on the web versus printed pages?", a: "Web uses short chunks, print uses longer passages." },
+            { q: "What are the four types of sequencing?", a: "Spatial, Chronological, Problem-solving, and Cause & effect." },
+            { q: "What does paragraph coherence mean?", a: "All sentences form a connected line of thought, leading from one sentence to the conclusion." },
+            { q: "What is the purpose of an overview?", a: "It is a brief summary that explains the purpose of the document and what information to expect." }
+        ],
+        quizzes: [
+            { q: "Which structure uses an introduction, body, and conclusion?", options: ["Non-standard structure", "Standard structure", "Spatial sequence"], answer: 1 },
+            { q: "Breaking information down into smaller units is called:", options: ["Chunking", "Sequencing", "Outlining"], answer: 0 },
+            { q: "Which sequence type traces the causes of an incident?", options: ["Spatial", "Chronological", "Cause & effect"], answer: 2 },
+            { q: "What can damage paragraph coherence?", options: ["Topic sentences", "Sentences in the wrong order", "Using standard structure"], answer: 1 }
+        ]
+    },
+    7: {
+        overview: "This chapter covers writing with a readable style, focusing on writing clearly, concisely, fluently, and personably while adjusting tone and avoiding biased language.",
+        flashcards: [
+            { q: "What is the difference between structure and style?", a: "Structure is for the document as a whole, style is at the sentence level." },
+            { q: "Name 3 things to avoid to write clearly.", a: "Ambiguous pronouns, passive voice, and unnecessary jargon." },
+            { q: "What does nominalization mean?", a: "Using nouns instead of verbs (e.g., 'make a recommendation' instead of 'recommend')." },
+            { q: "How can you eliminate wordiness?", a: "By reducing needless phrases to one word (e.g., 'due to the fact that' becomes 'because')." },
+            { q: "What is parallel structure?", a: "Using similar grammatical structures for related items (e.g., running, kayaking, and designing)." },
+            { q: "What is person-first language?", a: "Placing the person before the disability (e.g., 'person with a disability' instead of 'disabled person')." }
+        ],
+        quizzes: [
+            { q: "Which of the following is an example of redundant writing?", options: ["Close proximity", "Because", "Rapidly"], answer: 0 },
+            { q: "What should you do to achieve a fluent writing style?", options: ["Use short, choppy sentences", "Combine related ideas and use parallel structure", "Avoid active voice"], answer: 1 },
+            { q: "Which is the best way to write personably?", options: ["Use passive voice", "Address readers directly with 'you' and 'your'", "Use heavily technical jargon"], answer: 1 },
+            { q: "To avoid biased language, which term is preferred?", options: ["Person with a disability", "Disabled person", "Wheelchair bound"], answer: 0 }
+        ]
+    },
+    8: {
+        overview: "This chapter covers the formats, parts, and tone of memos and letters, explaining the three common types of written workplace communication.",
+        flashcards: [
+            { q: "What are the three common types of written communication in the workplace?", a: "Memos, letters, and emails." },
+            { q: "What does the word 'Memorandum' literally mean?", a: "It means 'Reminder'." },
+            { q: "What are the main purposes of a memo?", a: "Memos give directives, provide instructions, and make requests." },
+            { q: "Do memos leave a paper or digital trail?", a: "Memos leave a paper trail (printed communication), while emails leave a digital trail (electronic communication)." }
+        ],
+        quizzes: [
+            { q: "Which type of workplace communication is highly formal and leaves a paper trail?", options: ["Email", "Memo", "Text message"], answer: 1 },
+            { q: "What is the primary literal meaning of 'Memorandum'?", options: ["Report", "Reminder", "Directive"], answer: 1 },
+            { q: "If your communication is intended to be printed and posted in an office, you should use a:", options: ["Memo", "Email", "Instant message"], answer: 0 }
+        ]
+    },
+    9: {
+        overview: "This chapter focuses on strategies for writing instructions and procedures, emphasizing technical accuracy, clear design, and usability testing.",
+        flashcards: [
+            { q: "What are the two core criteria for good instructions?", a: "Accuracy and ease of use." },
+            { q: "What is a vital question to ask during usability testing for procedures?", a: "Do these instructions and procedures carry out the task safely, efficiently, and accurately?" },
+            { q: "Name key strategies for creating instructions.", a: "Analyze audience and purpose, design for maximum accessibility, and write with a readable style." }
+        ],
+        quizzes: [
+            { q: "What is the main question a basic usability survey tries to answer?", options: ["How much did the document cost?", "Do these instructions carry out the task safely, efficiently, and accurately?", "How long did it take to write?"], answer: 1 },
+            { q: "Which of the following is a recommended strategy for writing procedures?", options: ["Provide minimal details", "Design for maximum accessibility", "Ignore ethical and legal implications"], answer: 1 }
+        ]
+    },
+    10: {
+        overview: "This chapter covers the importance, purposes, types, and strategies of definitions in technical communication.",
+        flashcards: [
+            { q: "Why are definitions important in technical writing?", a: "They explain specialized terms to people who lack expertise in a particular field." },
+            { q: "What is a parenthetical definition?", a: "Clarifying the meaning of a word using a more familiar synonym or phrase in parenthesis." },
+            { q: "What method does a sentence definition use?", a: "The 'term-class-features' method." },
+            { q: "Give three methods for expanding a definition.", a: "Etymology, negation, and operating principle." },
+            { q: "Where should you place an expanded definition in a printed document?", a: "Near the beginning of a long document or in an appendix." }
+        ],
+        quizzes: [
+            { q: "Which type of definition uses the 'term-class-features' method?", options: ["Parenthetical", "Sentence", "Expanded"], answer: 1 },
+            { q: "Which of the following is a method for expansion definitions?", options: ["Visuals", "Negation", "Both A and B"], answer: 2 },
+            { q: "Why is an accurate definition essential from a legal perspective?", options: ["It makes the text longer", "The writer is legally responsible for the document", "It improves font readability"], answer: 1 }
+        ]
+    },
+    11: {
+        overview: "This chapter focuses on using audience-centered visuals, exploring their importance, types, and best practices for tables, graphs, diagrams, and icons.",
+        flashcards: [
+            { q: "Why are visuals important?", a: "They help readers interpret and remember complex information." },
+            { q: "What do bar graphs depict?", a: "Changes over time, patterns, and trends." },
+            { q: "What is the difference between an exploded diagram and a cutaway diagram?", a: "Exploded shows separated parts; cutaway shows the interior by 'cutting away' the shell." },
+            { q: "What is the difference between an icon and a symbol?", a: "An icon resembles the item it represents; a symbol is abstract and gets meaning across without resembling it." }
+        ],
+        quizzes: [
+            { q: "Which type of graph is best for describing changes over time and trends?", options: ["Line graph", "Bar graph", "Pie chart"], answer: 1 },
+            { q: "What do cutaway diagrams show?", options: ["The interior of an object", "Separated parts of an object", "Geographical locations"], answer: 0 },
+            { q: "Which of the following is TRUE about symbols?", options: ["They resemble the items they represent", "They get the meaning across without resembling the item", "They are always photographs"], answer: 1 }
+        ]
+    },
+    12: {
+        overview: "This chapter explores the importance of designing user-friendly documents, focusing on layout, characteristics of well-designed documents, and specific design elements that enhance usability.",
+        flashcards: [
+            { q: "What does document design refer to?", a: "The layout of words and graphics that determines the look of a document." },
+            { q: "Why is designing user-friendly documents important?", a: "It affects document usability, guides readers, and helps them understand the information." },
+            { q: "Name three characteristics of well-designed documents.", a: "Inviting and accessible, cohesive flow, and clear visual hierarchy." }
+        ],
+        quizzes: [
+            { q: "Document design primarily affects a document's:", options: ["Grammar
