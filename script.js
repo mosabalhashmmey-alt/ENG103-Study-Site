@@ -1,5 +1,6 @@
 const contentDB = {
     1: {
+        overview: "This chapter covers the foundations of Technical Writing for ENG 103, including its definitions, differences from academic writing, main features, purposes, and common document types.",
         flashcards: [
             { q: "What is Technical Communication?", a: "The exchange of information that helps people interact with technology, achieve workplace goals, and solve complex problems." },
             { q: "Give 3 examples of technical communication.", a: "Cell phone manuals, printer setup instructions, emails, and reports." },
@@ -21,6 +22,7 @@ const contentDB = {
         ]
     },
     2: {
+        overview: "This chapter focuses on the importance of proofreading and provides effective strategies to ensure your technical documents are clear, professional, and error-free.",
         flashcards: [
             { q: "Why is proofreading important?", a: "Basic errors distract the reader and make the writer look careless." },
             { q: "Should you proofread immediately after writing?", a: "No, you should take a break before proofreading your final document." },
@@ -35,6 +37,26 @@ const contentDB = {
             { q: "True or False: You should proofread your document only once.", options: ["True", "False", "Only if it is an email"], answer: 1 },
             { q: "When is the best time to focus on proofreading?", options: ["During the brainstorming phase", "While writing the first draft", "Save it for the final draft"], answer: 2 },
             { q: "According to the strategies, how fast should you proofread?", options: ["As fast as possible", "Keep it slow", "Skim the document"], answer: 1 }
+        ]
+    },
+    3: {
+        overview: "This chapter introduces the research process in technical communication, covering critical thinking, primary versus secondary sources, and strategies for evaluating both hard-copy and web-based information.",
+        flashcards: [
+            { q: "What does critical thinking about research mean?", a: "Testing the quality of information and accuracy of interpretations instead of accepting them at face value." },
+            { q: "What is Primary Research?", a: "Getting info directly from the source (e.g., interviews, surveys, observing people)." },
+            { q: "What is Secondary Research?", a: "Getting info second-hand by reading compiled works (e.g., books, articles, websites)." },
+            { q: "Name a benefit of hard-copy sources.", a: "Easier to preserve and keep secure, and easy to determine the author/date." },
+            { q: "Name a drawback of web-based sources.", a: "They are not always reliable and the user might get confused by too many choices." },
+            { q: "What are Bibliographies?", a: "Lists of books and articles by subject field." },
+            { q: "What are Almanacs?", a: "Collections of factual and statistical data." },
+            { q: "What is Gray Literature?", a: "Materials that may not be available at any library or unpublished materials." }
+        ],
+        quizzes: [
+            { q: "Which of the following is considered Primary Research?", options: ["Reading a library book", "Conducting a survey", "Searching an online database"], answer: 1 },
+            { q: "Which of the following is a benefit of Web-Based sources?", options: ["They are always 100% reliable", "Searches can be narrowed or broadened easily", "They are easier to preserve securely than paper"], answer: 1 },
+            { q: "When researching on the internet, you should:", options: ["Select technical keywords rather than general ones", "Rely on the first result you find", "Download everything without checking permission"], answer: 0 },
+            { q: "What type of reference work provides alphabetically arranged lists of words with definitions?", options: ["Indexes", "Almanacs", "Dictionaries"], answer: 2 },
+            { q: "To evaluate sources critically, you should:", options: ["Accept all information at face value", "Ask the right questions and evaluate the author's credentials", "Rely entirely on AI tools"], answer: 1 }
         ]
     }
 };
@@ -254,6 +276,7 @@ function checkQuizAnswer() {
 window.changeChapter = function(chapterId) {
     currentChapterId = chapterId;
 
+    // تحديث البطاقات والاختبارات
     cards = contentDB[currentChapterId].flashcards;
     quizzes = contentDB[currentChapterId].quizzes;
 
@@ -261,10 +284,16 @@ window.changeChapter = function(chapterId) {
     setupFlashcards();
     setupQuiz();
 
+    // تحديث صناديق الـ Beats
     document.querySelectorAll('.chapter-beats').forEach(div => div.style.display = 'none');
-    
     const activeBeats = document.getElementById(`beats-ch${chapterId}`);
     if(activeBeats) activeBeats.style.display = 'block';
+
+    // تحديث قسم הـ Overview بذكاء
+    const overviewEl = document.getElementById('chapter-overview');
+    if (overviewEl && contentDB[currentChapterId].overview) {
+        overviewEl.innerText = contentDB[currentChapterId].overview;
+    }
 
     showToast(`Switched to Chapter ${chapterId} Successfully!`);
 };
@@ -274,4 +303,10 @@ window.onload = () => {
     setupNavigation();
     setupFlashcards();
     setupQuiz();
+    
+    // للتأكد من تحميل Overview الشابتر الأول عند بداية تشغيل الموقع
+    const overviewEl = document.getElementById('chapter-overview');
+    if (overviewEl && contentDB[currentChapterId].overview) {
+        overviewEl.innerText = contentDB[currentChapterId].overview;
+    }
 };
