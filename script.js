@@ -85,6 +85,40 @@ const contentDB = {
             { q: "Which of the following is an example of UNETHICAL communication?", options: ["Citing all sources", "Exaggerating claims", "Giving the audience everything they need to know"], answer: 1 },
             { q: "To avoid ethical abuses, you should:", options: ["Manipulate data to look better", "Suppress negative information", "Always cite your sources if the info is not your own"], answer: 2 }
         ]
+    },
+    6: {
+        overview: "This chapter focuses on structuring information for readers, covering standard vs. non-standard structures, outlining, chunking, sequencing, paragraphing, and providing clear headings and overviews.",
+        flashcards: [
+            { q: "What is the difference between standard and non-standard structure?", a: "Standard uses intro, body, conclusion. Non-standard uses columns, colors, and images." },
+            { q: "What are the two types of outlining notation?", a: "Alphanumeric and Decimal notation." },
+            { q: "How is chunking handled differently on the web versus printed pages?", a: "Web uses short chunks, print uses longer passages." },
+            { q: "What are the four types of sequencing?", a: "Spatial, Chronological, Problem-solving, and Cause & effect." },
+            { q: "What does paragraph coherence mean?", a: "All sentences form a connected line of thought, leading from one sentence to the conclusion." },
+            { q: "What is the purpose of an overview?", a: "It is a brief summary that explains the purpose of the document and what information to expect." }
+        ],
+        quizzes: [
+            { q: "Which structure uses an introduction, body, and conclusion?", options: ["Non-standard structure", "Standard structure", "Spatial sequence"], answer: 1 },
+            { q: "Breaking information down into smaller units is called:", options: ["Chunking", "Sequencing", "Outlining"], answer: 0 },
+            { q: "Which sequence type traces the causes of an incident?", options: ["Spatial", "Chronological", "Cause & effect"], answer: 2 },
+            { q: "What can damage paragraph coherence?", options: ["Topic sentences", "Sentences in the wrong order", "Using standard structure"], answer: 1 }
+        ]
+    },
+    7: {
+        overview: "This chapter covers writing with a readable style, focusing on writing clearly, concisely, fluently, and personably while adjusting tone and avoiding biased language.",
+        flashcards: [
+            { q: "What is the difference between structure and style?", a: "Structure is for the document as a whole, style is at the sentence level." },
+            { q: "Name 3 things to avoid to write clearly.", a: "Ambiguous pronouns, passive voice, and unnecessary jargon." },
+            { q: "What does nominalization mean?", a: "Using nouns instead of verbs (e.g., 'make a recommendation' instead of 'recommend')." },
+            { q: "How can you eliminate wordiness?", a: "By reducing needless phrases to one word (e.g., 'due to the fact that' becomes 'because')." },
+            { q: "What is parallel structure?", a: "Using similar grammatical structures for related items (e.g., running, kayaking, and designing)." },
+            { q: "What is person-first language?", a: "Placing the person before the disability (e.g., 'person with a disability' instead of 'disabled person')." }
+        ],
+        quizzes: [
+            { q: "Which of the following is an example of redundant writing?", options: ["Close proximity", "Because", "Rapidly"], answer: 0 },
+            { q: "What should you do to achieve a fluent writing style?", options: ["Use short, choppy sentences", "Combine related ideas and use parallel structure", "Avoid active voice"], answer: 1 },
+            { q: "Which is the best way to write personably?", options: ["Use passive voice", "Address readers directly with 'you' and 'your'", "Use heavily technical jargon"], answer: 1 },
+            { q: "To avoid biased language, which term is preferred?", options: ["Person with a disability", "Disabled person", "Wheelchair bound"], answer: 0 }
+        ]
     }
 };
 
@@ -316,7 +350,7 @@ window.changeChapter = function(chapterId) {
     const activeBeats = document.getElementById(`beats-ch${chapterId}`);
     if(activeBeats) activeBeats.style.display = 'block';
 
-    // تحديث قسم הـ Overview بذكاء
+    // تحديث قسم الـ Overview بذكاء
     const overviewEl = document.getElementById('chapter-overview');
     if (overviewEl && contentDB[currentChapterId].overview) {
         overviewEl.innerText = contentDB[currentChapterId].overview;
