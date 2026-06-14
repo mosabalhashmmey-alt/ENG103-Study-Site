@@ -174,6 +174,32 @@ const contentDB = {
             { q: "What do cutaway diagrams show?", options: ["The interior of an object", "Separated parts of an object", "Geographical locations"], answer: 0 },
             { q: "Which of the following is TRUE about symbols?", options: ["They resemble the items they represent", "They get the meaning across without resembling the item", "They are always photographs"], answer: 1 }
         ]
+    },
+    12: {
+        overview: "This chapter explores the importance of designing user-friendly documents, focusing on layout, characteristics of well-designed documents, and specific design elements that enhance usability.",
+        flashcards: [
+            { q: "What does document design refer to?", a: "The layout of words and graphics that determines the look of a document." },
+            { q: "Why is designing user-friendly documents important?", a: "It affects document usability, guides readers, and helps them understand the information." },
+            { q: "Name three characteristics of well-designed documents.", a: "Inviting and accessible, cohesive flow, and clear visual hierarchy." }
+        ],
+        quizzes: [
+            { q: "Document design primarily affects a document's:", options: ["Grammar", "Usability (ease-of-use)", "Printing cost"], answer: 1 },
+            { q: "Visual hierarchy in a document helps to:", options: ["Display information in the right order", "Make the document longer", "Hide less important information"], answer: 0 }
+        ]
+    },
+    13: {
+        overview: "This chapter explains how to write effective summaries, highlighting that a summary is a brief restatement of a longer document focusing on accuracy, completeness, conciseness, and nontechnical style.",
+        flashcards: [
+            { q: "What is a summary?", a: "A shorter restatement of the specific details or examples from a longer document." },
+            { q: "Does a summary change the meaning of the original document?", a: "No, it conveys the meaning of the original source's ideas." },
+            { q: "What are the four elements of an effective summary?", a: "Accuracy, completeness, conciseness, and nontechnical style." },
+            { q: "What does 'Conciseness' mean in a summary?", a: "Excluding unnecessary details." }
+        ],
+        quizzes: [
+            { q: "Which of the following is TRUE about a summary?", options: ["It is longer than the original document", "It is shorter than the original document", "It contains new personal opinions"], answer: 1 },
+            { q: "An effective summary should be written in a:", options: ["Highly technical style", "Nontechnical style (simple English)", "Poetic style"], answer: 1 },
+            { q: "Which element ensures all important information is included in a summary?", options: ["Completeness", "Conciseness", "Accuracy"], answer: 0 }
+        ]
     }
 };
 
