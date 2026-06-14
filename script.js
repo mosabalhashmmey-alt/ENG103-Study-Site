@@ -183,4 +183,360 @@ const contentDB = {
             { q: "Name three characteristics of well-designed documents.", a: "Inviting and accessible, cohesive flow, and clear visual hierarchy." }
         ],
         quizzes: [
-            { q: "Document design primarily affects a document's:", options: ["Grammar
+            { q: "Document design primarily affects a document's:", options: ["Grammar", "Usability (ease-of-use)", "Printing cost"], answer: 1 },
+            { q: "Visual hierarchy in a document helps to:", options: ["Display information in the right order", "Make the document longer", "Hide less important information"], answer: 0 }
+        ]
+    },
+    13: {
+        overview: "This chapter explains how to write effective summaries, highlighting that a summary is a brief restatement of a longer document focusing on accuracy, completeness, conciseness, and nontechnical style.",
+        flashcards: [
+            { q: "What is a summary?", a: "A shorter restatement of the specific details or examples from a longer document." },
+            { q: "Does a summary change the meaning of the original document?", a: "No, it conveys the meaning of the original source's ideas." },
+            { q: "What are the four elements of an effective summary?", a: "Accuracy, completeness, conciseness, and nontechnical style." },
+            { q: "What does 'Conciseness' mean in a summary?", a: "Excluding unnecessary details." }
+        ],
+        quizzes: [
+            { q: "Which of the following is TRUE about a summary?", options: ["It is longer than the original document", "It is shorter than the original document", "It contains new personal opinions"], answer: 1 },
+            { q: "An effective summary should be written in a:", options: ["Highly technical style", "Nontechnical style (simple English)", "Poetic style"], answer: 1 },
+            { q: "Which element ensures all important information is included in a summary?", options: ["Completeness", "Conciseness", "Accuracy"], answer: 0 }
+        ]
+    },
+    14: {
+        overview: "This chapter covers special types of summaries including closing summaries, informative abstracts, descriptive abstracts, and executive summaries, along with ethical considerations and strategies.",
+        flashcards: [
+            { q: "What are the 4 special types of summaries?", a: "Closing Summary, Informative Abstract, Descriptive Abstract, and Executive Summary." },
+            { q: "Where does a closing summary appear?", a: "In the concluding section of a formal report or proposal." },
+            { q: "What is the purpose of an informative abstract?", a: "It condenses what the whole document contains, summarizing the issue, methods, findings, and conclusion." },
+            { q: "What does a descriptive abstract do?", a: "It states what a document covers without getting into details, helping readers decide whether to read the report." },
+            { q: "What is a potential ethical issue when summarizing?", a: "It might fail to communicate full complexity or distort the original writer's intent and tone." }
+        ],
+        quizzes: [
+            { q: "Which summary appears in the concluding section to help readers review major findings?", options: ["Closing Summary", "Executive Summary", "Descriptive Abstract"], answer: 0 },
+            { q: "Which type of abstract is the most compressed and only states what a document covers?", options: ["Informative Abstract", "Descriptive Abstract", "Closing Summary"], answer: 1 },
+            { q: "To avoid plagiarism when writing a summary, you should:", options: ["Copy the text exactly", "Rewrite the key information in your own words", "Change the facts"], answer: 1 }
+        ]
+    },
+    15: {
+        overview: "This chapter introduces resumes, their main parts, organization types, and strategies for creating a strong personal advertisement for employment.",
+        flashcards: [
+            { q: "What is a resume?", a: "It is an applicant's personal advertisement for employment that presents their qualifications." },
+            { q: "What is the purpose of a resume?", a: "To give an employer an instant overview of what you can do for them." },
+            { q: "Name the main parts of a resume.", a: "Contact information, career objectives, education, work experience, personal data/interests, and references." },
+            { q: "What is a standard (reverse chronological) resume?", a: "It lists the most recent school and job first." },
+            { q: "What is a functional resume?", a: "It highlights skills relevant to a particular job rather than just chronological history." }
+        ],
+        quizzes: [
+            { q: "A resume is designed to:", options: ["Give an employer an instant overview of your qualifications", "Detail your entire life story", "Replace an interview"], answer: 0 },
+            { q: "Which type of resume highlights skills relevant to a particular job instead of just listing chronological history?", options: ["Standard resume", "Functional resume", "Objective resume"], answer: 1 },
+            { q: "Which of the following is a recommended strategy for resumes?", options: ["Limit the resume to a single page", "Invent qualifications to look better", "Include all unrelated experience"], answer: 0 }
+        ]
+    },
+    16: {
+        overview: "This chapter covers application letters, dossiers, portfolios, interview strategies, and follow-up letters used during a job search.",
+        flashcards: [
+            { q: "What is an application letter (cover letter)?", a: "A letter explaining how your qualifications fit a particular job." },
+            { q: "What is the difference between solicited and unsolicited application letters?", a: "Solicited is for an advertised job; unsolicited is for an unadvertised job." },
+            { q: "What should you bring to an interview?", a: "A briefcase, pen, notepad, your own questions, extra copies of your resume, and a portfolio." },
+            { q: "Name two types of follow-up letters.", a: "Thank you letters and Acceptance/Refusal letters." },
+            { q: "Should you criticize a previous employer during an interview?", a: "No, never criticize a previous employer." }
+        ],
+        quizzes: [
+            { q: "An application letter written for an unadvertised job is called:", options: ["A solicited letter", "An unsolicited letter", "A refusal letter"], answer: 1 },
+            { q: "During an interview, if you don't know the answer to a question, you should:", options: ["Make up a convincing lie", "Say so and relax", "Start talking about your hobbies"], answer: 1 },
+            { q: "When should a 'Thank You' letter be sent?", options: ["Before applying for the job", "Immediately after the interview", "Only if you get hired"], answer: 1 }
+        ]
+    },
+    17: {
+        overview: "This chapter explains what proposals are, their primary purposes, and the differences between solicited and unsolicited proposals in technical writing.",
+        flashcards: [
+            { q: "What is a proposal?", a: "An offer to do something or a suggestion for action." },
+            { q: "What is the main purpose of a proposal?", a: "To persuade the reader to adopt your plan, buy your product, or hire your services." },
+            { q: "What is a Solicited Proposal?", a: "A proposal requested by an organization, often through a Request for Proposal (RFP)." },
+            { q: "What is an Unsolicited Proposal?", a: "A proposal initiated by the writer without a specific request, trying to convince the reader that a problem exists and needs a solution." }
+        ],
+        quizzes: [
+            { q: "The main purpose of a proposal is to:", options: ["Persuade the reader to adopt a plan or buy a product", "Entertain the audience with a story", "Summarize a long document"], answer: 0 },
+            { q: "A proposal requested by an organization through an RFP is called:", options: ["An internal proposal", "A solicited proposal", "An unsolicited proposal"], answer: 1 },
+            { q: "Which type of proposal must first convince the reader that a problem actually exists?", options: ["Solicited Proposal", "Unsolicited Proposal", "Academic Proposal"], answer: 1 }
+        ]
+    },
+    18: {
+        overview: "This chapter covers formal reports, highly structured documents used to solve complex problems or present research, detailing their front matter, body, and back matter.",
+        flashcards: [
+            { q: "What are formal reports?", a: "Highly structured documents used to solve complex problems, present research, or provide extensive data." },
+            { q: "Name the three main sections of a formal report.", a: "Front matter, Body, and Back matter." },
+            { q: "What is included in the 'Front Matter' of a formal report?", a: "Title page, transmittal letter, table of contents, and abstracts." },
+            { q: "What is included in the 'Back Matter' of a formal report?", a: "References, glossary, and appendices." }
+        ],
+        quizzes: [
+            { q: "Which of the following belongs in the 'Front Matter' of a formal report?", options: ["Table of contents", "Conclusion", "Glossary"], answer: 0 },
+            { q: "Formal reports are typically used to:", options: ["Send a quick informal message to a coworker", "Solve complex problems and present extensive data", "Request an interview"], answer: 1 },
+            { q: "Where would you place the 'References' or 'Glossary' in a formal report?", options: ["Front Matter", "Body", "Back Matter"], answer: 2 }
+        ]
+    },
+    20: {
+        overview: "This merged chapter covers short written messages like emails, oral and sales presentation delivery styles, and the professional use of internal and external corporate blogs.",
+        flashcards: [
+            { q: "What is the preferred delivery style for workplace presentations?", a: "Extemporaneous (using an outline but providing room to interact with listeners)." },
+            { q: "What is an impromptu presentation?", a: "A presentation that relies on a natural connection with the listeners without a script." },
+            { q: "Why do companies use internal corporate blogs?", a: "To help employees network, deliver training, replace long emails, and enhance workflow." },
+            { q: "What is the purpose of external corporate blogs?", a: "To communicate with customers, facilitate feedback, enhance marketing, and personalize the company." },
+            { q: "How should you overcome anxiety before a presentation?", a: "Be rehearsed and prepared, dress for success, take charge, and gesture naturally." }
+        ],
+        quizzes: [
+            { q: "Which presentation delivery style should generally be avoided in workplace settings?", options: ["Extemporaneous", "Impromptu", "Memorized"], answer: 2 },
+            { q: "An internal corporate blog is primarily designed to:", options: ["Market products to new customers", "Help employees network and enhance workflow", "Apply for a job at another company"], answer: 1 },
+            { q: "How can you overcome anxiety during an oral presentation?", options: ["Read verbatim from a script", "Dress for success, prepare well, and gesture naturally", "Avoid looking at the audience completely"], answer: 1 }
+        ]
+    }
+};
+
+let currentChapterId = 1;
+let userState = { xp: 0, level: 1, openedBeats: [] };
+
+function loadState() {
+    const saved = localStorage.getItem('eng103_state');
+    if (saved) userState = JSON.parse(saved);
+    updateDashboardUI();
+}
+
+function saveState() {
+    localStorage.setItem('eng103_state', JSON.stringify(userState));
+    updateDashboardUI();
+}
+
+function addXP(amount) {
+    userState.xp += amount;
+    const newLevel = Math.floor(userState.xp / 100) + 1;
+    showToast(`+${amount} XP Gained!`);
+    if (newLevel > userState.level) {
+        userState.level = newLevel;
+        setTimeout(() => showToast(`Level Up! You are now Level ${userState.level}`), 1500);
+    }
+    saveState();
+}
+
+function updateDashboardUI() {
+    document.getElementById('user-xp').innerText = userState.xp;
+    document.getElementById('user-level').innerText = userState.level;
+    document.getElementById('next-level-xp').innerText = userState.level * 100;
+    const progressPercent = ((userState.xp % 100) / 100) * 100;
+    document.getElementById('xp-progress').style.width = `${progressPercent}%`;
+}
+
+function showToast(msg) {
+    const toast = document.getElementById('toast');
+    toast.innerText = msg;
+    toast.classList.add('show');
+    setTimeout(() => toast.classList.remove('show'), 3000);
+}
+
+function setupNavigation() {
+    const navItems = document.querySelectorAll('.nav-links li');
+    const sections = document.querySelectorAll('.page-section');
+
+    navItems.forEach(item => {
+        item.addEventListener('click', () => {
+            navItems.forEach(n => n.classList.remove('active'));
+            item.classList.add('active');
+            const target = item.getAttribute('data-target');
+            sections.forEach(sec => sec.classList.remove('active'));
+            document.getElementById(target).classList.add('active');
+        });
+    });
+}
+
+function toggleBeat(element) {
+    const parent = element.parentElement;
+    const beatTitle = element.querySelector('span').innerText;
+    parent.classList.toggle('active');
+    if (parent.classList.contains('active') && !userState.openedBeats.includes(beatTitle)) {
+        userState.openedBeats.push(beatTitle);
+        addXP(5);
+    }
+}
+
+let currentCardIndex = 0;
+let cards = contentDB[currentChapterId].flashcards;
+
+function setupFlashcards() {
+    const container = document.getElementById('flashcard-container');
+    if(!container) return;
+    container.innerHTML = `
+        <div class="flashcard-controls">
+            <button id="prev-card" class="btn"><i class="fas fa-arrow-left"></i></button>
+            <span id="card-counter">1 / ${cards.length}</span>
+            <button id="next-card" class="btn"><i class="fas fa-arrow-right"></i></button>
+        </div>
+        <div class="flashcard-wrapper">
+            <div class="flashcard" id="active-flashcard">
+                <div class="flashcard-inner">
+                    <div class="flashcard-front glass-card" id="card-front"></div>
+                    <div class="flashcard-back glass-card" id="card-back"></div>
+                </div>
+            </div>
+        </div>
+        <div class="tap-hint"><i class="fas fa-hand-pointer"></i> Tap to flip</div>
+    `;
+    renderFlashcard();
+    
+    document.getElementById('active-flashcard').onclick = function() {
+        this.classList.toggle('flipped');
+        if(this.classList.contains('flipped') && Math.random() > 0.5) addXP(1);
+    };
+    document.getElementById('prev-card').onclick = () => {
+        if (currentCardIndex > 0) { currentCardIndex--; renderFlashcard(); }
+    };
+    document.getElementById('next-card').onclick = () => {
+        if (currentCardIndex < cards.length - 1) { currentCardIndex++; renderFlashcard(); }
+    };
+}
+
+function renderFlashcard() {
+    document.getElementById('card-counter').innerText = `${currentCardIndex + 1} / ${cards.length}`;
+    document.getElementById('card-front').innerHTML = `<h3>${cards[currentCardIndex].q}</h3>`;
+    document.getElementById('card-back').innerHTML = `<h3>${cards[currentCardIndex].a}</h3>`;
+    document.getElementById('active-flashcard').classList.remove('flipped');
+}
+
+let currentQuizIndex = 0;
+let score = 0;
+let selectedOption = null;
+let quizzes = contentDB[currentChapterId].quizzes;
+
+function setupQuiz() {
+    const container = document.getElementById('quiz-container');
+    if(!container) return;
+    container.innerHTML = `
+        <div id="quiz-intro" class="quiz-state active text-center">
+            <div class="glass-card p-4">
+                <h3>Test Your Knowledge!</h3>
+                <p class="mt-4 mb-4">Correct Answer = +10 XP</p>
+                <button id="start-quiz-btn" class="btn btn-primary">Start Quiz</button>
+            </div>
+        </div>
+        <div id="quiz-active" class="quiz-state">
+            <div class="quiz-header">
+                <span id="quiz-progress-text">Q 1/${quizzes.length}</span>
+                <span id="quiz-score-text">Score: 0</span>
+            </div>
+            <div class="glass-card">
+                <h3 id="quiz-question" class="mb-4"></h3>
+                <div id="quiz-options" class="options-grid"></div>
+                <button id="submit-quiz-btn" class="btn btn-primary w-100" disabled>Submit</button>
+            </div>
+        </div>
+        <div id="quiz-result" class="quiz-state text-center">
+            <div class="glass-card p-4">
+                <h1 class="mb-2">Completed!</h1>
+                <h2 id="final-score" class="mb-4 text-primary">Score: 0/${quizzes.length}</h2>
+                <button id="restart-quiz-btn" class="btn btn-primary">Retake</button>
+            </div>
+        </div>
+    `;
+    document.getElementById('start-quiz-btn').onclick = startQuiz;
+    document.getElementById('restart-quiz-btn').onclick = startQuiz;
+}
+
+function startQuiz() {
+    document.getElementById('quiz-intro').classList.remove('active');
+    document.getElementById('quiz-result').classList.remove('active');
+    document.getElementById('quiz-active').classList.add('active');
+    currentQuizIndex = 0; score = 0;
+    renderQuizQuestion();
+}
+
+function renderQuizQuestion() {
+    selectedOption = null;
+    const qData = quizzes[currentQuizIndex];
+    document.getElementById('quiz-progress-text').innerText = `Q ${currentQuizIndex + 1}/${quizzes.length}`;
+    document.getElementById('quiz-score-text').innerText = `Score: ${score}`;
+    document.getElementById('quiz-question').innerText = qData.q;
+    
+    const optionsContainer = document.getElementById('quiz-options');
+    optionsContainer.innerHTML = '';
+    
+    qData.options.forEach((opt, idx) => {
+        const btn = document.createElement('button');
+        btn.className = 'option-btn';
+        btn.innerText = opt;
+        btn.onclick = () => {
+            document.querySelectorAll('.option-btn').forEach(b => b.classList.remove('selected'));
+            btn.classList.add('selected');
+            selectedOption = idx;
+            document.getElementById('submit-quiz-btn').disabled = false;
+        };
+        optionsContainer.appendChild(btn);
+    });
+
+    const submitBtn = document.getElementById('submit-quiz-btn');
+    submitBtn.disabled = true;
+    submitBtn.innerText = "Submit";
+    submitBtn.onclick = checkQuizAnswer;
+}
+
+function checkQuizAnswer() {
+    const qData = quizzes[currentQuizIndex];
+    const allBtns = document.querySelectorAll('.option-btn');
+    allBtns.forEach(btn => btn.disabled = true);
+
+    if (selectedOption === qData.answer) {
+        allBtns[selectedOption].classList.add('correct');
+        score++;
+        addXP(10);
+    } else {
+        allBtns[selectedOption].classList.add('wrong');
+        allBtns[qData.answer].classList.add('correct');
+    }
+
+    const submitBtn = document.getElementById('submit-quiz-btn');
+    submitBtn.innerText = "Next";
+    submitBtn.onclick = () => {
+        currentQuizIndex++;
+        if (currentQuizIndex < quizzes.length) renderQuizQuestion();
+        else {
+            document.getElementById('quiz-active').classList.remove('active');
+            document.getElementById('quiz-result').classList.add('active');
+            document.getElementById('final-score').innerText = `Score: ${score}/${quizzes.length}`;
+            if(score === quizzes.length) addXP(50);
+        }
+    };
+}
+
+window.changeChapter = function(chapterId) {
+    currentChapterId = chapterId;
+
+    // تحديث البطاقات والاختبارات
+    cards = contentDB[currentChapterId].flashcards;
+    quizzes = contentDB[currentChapterId].quizzes;
+
+    currentCardIndex = 0;
+    setupFlashcards();
+    setupQuiz();
+
+    // تحديث صناديق الـ Beats
+    document.querySelectorAll('.chapter-beats').forEach(div => div.style.display = 'none');
+    const activeBeats = document.getElementById(`beats-ch${chapterId}`);
+    if(activeBeats) activeBeats.style.display = 'block';
+
+    // تحديث قسم الـ Overview بذكاء
+    const overviewEl = document.getElementById('chapter-overview');
+    if (overviewEl && contentDB[currentChapterId].overview) {
+        overviewEl.innerText = contentDB[currentChapterId].overview;
+    }
+
+    showToast(`Switched to Chapter ${chapterId} Successfully!`);
+};
+
+window.onload = () => {
+    loadState();
+    setupNavigation();
+    setupFlashcards();
+    setupQuiz();
+    
+    // للتأكد من تحميل Overview الشابتر الأول عند بداية تشغيل الموقع
+    const overviewEl = document.getElementById('chapter-overview');
+    if (overviewEl && contentDB[currentChapterId].overview) {
+        overviewEl.innerText = contentDB[currentChapterId].overview;
+    }
+};
