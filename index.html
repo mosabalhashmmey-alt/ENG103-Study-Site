@@ -44,6 +44,7 @@
     <select id="chapter-select" onchange="changeChapter(this.value)" class="btn" style="background: var(--bg-dark); color: var(--text-main); font-size: 1.1rem; border: 1px solid var(--primary-blue); cursor: pointer;">
         <option value="1">Chapter 1: Intro to Tech Comm</option>
         <option value="2">Chapter 2: Proofreading Strategies</option>
+        <option value="3">Chapter 3: The Research Process</option>
     </select>
 </div>
                 
@@ -51,23 +52,23 @@
                     <div class="stat-card glass-card">
                         <i class="fas fa-bullseye"></i>
                         <h3>Objectives</h3>
-                        <p>6 Key Learning Goals</p>
+                        <p>Key Learning Goals</p>
                     </div>
                     <div class="stat-card glass-card">
                         <i class="fas fa-book-reader"></i>
                         <h3>Study Beats</h3>
-                        <p>6 Sections</p>
+                        <p>Core Sections</p>
                     </div>
                 </div>
 
                 <h2 class="section-subtitle">Overview</h2>
                 <div class="glass-card">
-                    <p>This chapter covers the foundations of Technical Writing for ENG 103, including its definitions, differences from academic writing, main features, purposes, and common document types.</p>
+                    <p id="chapter-overview">This chapter covers the foundations of Technical Writing for ENG 103, including its definitions, differences from academic writing, main features, purposes, and common document types.</p>
                 </div>
             </section>
 
             <section id="beats" class="page-section">
-                <h1 class="page-title">Study Beats: Chapter 1 Content</h1>
+                <h1 class="page-title">Study Beats Content</h1>
                 
                 <div class="accordion-container" id="beats-container">
                     <div id="beats-ch1" class="chapter-beats">
@@ -209,7 +210,101 @@
                 </div>
             </div>
 
-        </div> </div>
+        </div> 
+        
+        <div id="beats-ch3" class="chapter-beats" style="display: none;">
+            
+            <div class="accordion-item glass-card">
+                <div class="accordion-header" onclick="toggleBeat(this)">
+                    <span>1. Thinking Critically About Research</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-content-inner">
+                        <p>Critical thinking means testing the quality of information and accuracy of interpretations. Instead of accepting information at face value, you should examine, evaluate, verify, analyze, and weigh alternatives.</p>
+                        <p><strong>Effective Strategies:</strong> Ask the right questions, explore a balance of views, explore topic in depth, evaluate sources, and interpret findings objectively.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item glass-card">
+                <div class="accordion-header" onclick="toggleBeat(this)">
+                    <span>2. Primary Vs. Secondary Sources</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-content-inner">
+                        <ul>
+                            <li><strong>Primary Research:</strong> Getting information directly from the source (e.g., conducting interviews, surveys, observing people or events).</li>
+                            <li><strong>Secondary Research:</strong> Getting information second-hand by reading compiled works (e.g., books, articles, websites).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item glass-card">
+                <div class="accordion-header" onclick="toggleBeat(this)">
+                    <span>3. Hard-Copy Vs. Web-Based Sources</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-content-inner">
+                        <p><strong>Hard-Copy Sources:</strong></p>
+                        <ul>
+                            <li><em>Benefits:</em> Found on shelves with related materials, easy to determine author/date, easier to preserve and keep secure.</li>
+                            <li><em>Drawbacks:</em> Time-consuming to search, offer only text/images, hard to update.</li>
+                        </ul>
+                        <p><strong>Web-Based Sources:</strong></p>
+                        <ul>
+                            <li><em>Benefits:</em> More current and accessible, searches can be narrowed/broadened easily, offers material with no hard-copy equivalent.</li>
+                            <li><em>Drawbacks:</em> Might only access recent material, not always reliable, user might get confused by too many choices.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item glass-card">
+                <div class="accordion-header" onclick="toggleBeat(this)">
+                    <span>4. Strategies for Internet Research</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-content-inner">
+                        <ul>
+                            <li>Select technical keywords rather than general ones.</li>
+                            <li>Identify the site's purpose and sponsor.</li>
+                            <li>Assess the currency of the site and its materials.</li>
+                            <li>Assess the author's credentials and assertions.</li>
+                            <li>Download only what you need, use it ethically, and cite sources.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item glass-card">
+                <div class="accordion-header" onclick="toggleBeat(this)">
+                    <span>5. Categories of Hard-Copy Reference Works</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-content-inner">
+                        <ul style="column-count: 2;">
+                            <li>Bibliographies</li>
+                            <li>Indexes</li>
+                            <li>Encyclopedias</li>
+                            <li>Dictionaries</li>
+                            <li>Handbooks</li>
+                            <li>Almanacs</li>
+                            <li>Directories</li>
+                            <li>Abstracts</li>
+                            <li>Gray Literature</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div> 
+        </div>
             </section>
 
             <section id="flashcards" class="page-section">
