@@ -119,6 +119,32 @@ const contentDB = {
             { q: "Which is the best way to write personably?", options: ["Use passive voice", "Address readers directly with 'you' and 'your'", "Use heavily technical jargon"], answer: 1 },
             { q: "To avoid biased language, which term is preferred?", options: ["Person with a disability", "Disabled person", "Wheelchair bound"], answer: 0 }
         ]
+    },
+    8: {
+        overview: "This chapter covers the formats, parts, and tone of memos and letters, explaining the three common types of written workplace communication.",
+        flashcards: [
+            { q: "What are the three common types of written communication in the workplace?", a: "Memos, letters, and emails." },
+            { q: "What does the word 'Memorandum' literally mean?", a: "It means 'Reminder'." },
+            { q: "What are the main purposes of a memo?", a: "Memos give directives, provide instructions, and make requests." },
+            { q: "Do memos leave a paper or digital trail?", a: "Memos leave a paper trail (printed communication), while emails leave a digital trail (electronic communication)." }
+        ],
+        quizzes: [
+            { q: "Which type of workplace communication is highly formal and leaves a paper trail?", options: ["Email", "Memo", "Text message"], answer: 1 },
+            { q: "What is the primary literal meaning of 'Memorandum'?", options: ["Report", "Reminder", "Directive"], answer: 1 },
+            { q: "If your communication is intended to be printed and posted in an office, you should use a:", options: ["Memo", "Email", "Instant message"], answer: 0 }
+        ]
+    },
+    9: {
+        overview: "This chapter focuses on strategies for writing instructions and procedures, emphasizing technical accuracy, clear design, and usability testing.",
+        flashcards: [
+            { q: "What are the two core criteria for good instructions?", a: "Accuracy and ease of use." },
+            { q: "What is a vital question to ask during usability testing for procedures?", a: "Do these instructions and procedures carry out the task safely, efficiently, and accurately?" },
+            { q: "Name key strategies for creating instructions.", a: "Analyze audience and purpose, design for maximum accessibility, and write with a readable style." }
+        ],
+        quizzes: [
+            { q: "What is the main question a basic usability survey tries to answer?", options: ["How much did the document cost?", "Do these instructions carry out the task safely, efficiently, and accurately?", "How long did it take to write?"], answer: 1 },
+            { q: "Which of the following is a recommended strategy for writing procedures?", options: ["Provide minimal details", "Design for maximum accessibility", "Ignore ethical and legal implications"], answer: 1 }
+        ]
     }
 };
 
